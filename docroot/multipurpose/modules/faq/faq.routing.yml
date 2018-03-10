@@ -1,0 +1,55 @@
+faqList:
+  path: /faq/list
+  defaults:
+      _controller: Drupal\faq\Controller\FaqController::lista
+  requirements:
+      _permission: 'faq read'
+      #_user_is_logged_in: 'FALSE'
+
+faqList2:
+  path: /faq/list2
+  defaults:
+      _controller: Drupal\faq\Controller\FaqController::lista2
+  requirements:
+      _permission: 'faq read'
+      #_user_is_logged_in: 'FALSE'
+
+faqAdd:
+  path: /faq/add
+  defaults:
+    _form: '\Drupal\faq\Form\FaqAddForm'
+    _title: 'Crear pregunta'
+  requirements:
+    _permission: 'faq add'
+
+faqAdd2:
+  path: /faq/add2
+  defaults:
+    _controller: Drupal\faq\Controller\FaqController::add
+    _title: 'Crear pregunta'
+  requirements:
+    _permission: 'faq add'
+
+#faqSave:
+#  path: /faq/save
+#  defaults:
+#    _controller: Drupal\faq\Controller\FaqController::save
+#  requirements:
+#    _permission: 'faq add'
+
+
+faqDelete:
+  path: '/faq/delete/{id}'
+  defaults:
+    _form: 'Drupal\faq\Form\FaqDeleteForm'
+    _title: 'Eliminar pregunta'
+  requirements: 
+    _permission: 'faq delete'
+
+faqUpdate:
+  path: '/faq/update/{id}'
+  defaults:
+    _form: 'Drupal\faq\Form\FaqUpdateForm'
+    _title: 'Modificar pregunta'
+  requirements:
+    _permission: 'faq update'

@@ -1,0 +1,13 @@
+name: owl
+type: module
+description: OWL Carousel
+# core: 8.x
+package: Tabvn
+dependencies:
+  - field
+  - image
+# Information added by Drupal.org packaging script on 2017-12-12
+version: '8.x-1.0-beta5'
+core: '8.x'
+project: 'multipurpose_corporate_profile'
+datestamp: 1513048100

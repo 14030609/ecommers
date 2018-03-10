@@ -1,0 +1,19 @@
+faq read:
+    title: 'Leer FAQ'
+    description: 'Lectura de FAQ'
+    restrict access: false
+
+faq add:
+    title: 'Agregar FAQ'
+    description: 'Agregar nuevos FAQ'
+    restrict access: true
+
+faq update:
+    title: 'Actualizar FAQ'
+    description: 'Actualiza FAQ'
+    restrict access: true
+
+faq delete:
+    title: 'Elimina FAQ'
+    description: 'Eliminar FAQ'
+    restrict access: true
